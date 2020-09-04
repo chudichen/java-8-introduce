@@ -59,7 +59,7 @@ public class AnonymousClassTest {
      */
     @Test
     public void normalCompareTest() {
-        List<String> list = Arrays.asList("lambda", "introduce");
+        List<String> list = Arrays.asList("lambda", "apple", "juice", "rabbit", "app");
         Collections.sort(list, new Comparator<String>() {
             @Override
             public int compare(String s1, String s2) {
@@ -82,7 +82,7 @@ public class AnonymousClassTest {
      */
     @Test
     public void lambdaCompareTest() {
-        List<String> list = Arrays.asList("lambda", "introduce");
+        List<String> list = Arrays.asList("lambda", "apple", "juice", "rabbit", "app");
         Collections.sort(list, (s1, s2) -> {
             if (s1 == null) {
                 return -1;
@@ -94,6 +94,4 @@ public class AnonymousClassTest {
         });
         System.out.println(list);
     }
-
-
 }
