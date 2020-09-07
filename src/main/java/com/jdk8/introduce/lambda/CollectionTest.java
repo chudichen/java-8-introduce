@@ -185,10 +185,4 @@ public class CollectionTest {
         list.sort((str1, str2) -> str1.length() - str2.length());
         System.out.println(list);
     }
-
-    /*
-     * ----------------------- spliterator() 的用法 -----------------------
-     */
-
-
 }
