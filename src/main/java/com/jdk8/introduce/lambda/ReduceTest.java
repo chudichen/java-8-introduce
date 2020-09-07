@@ -131,8 +131,7 @@ public class ReduceTest {
                 new Student("Michael", 2, 95));
 
         Map<Integer, List<String>> result = stream
-                .collect(Collectors
-                        .groupingBy(
+                .collect(Collectors.groupingBy(
                                 Student::getClassNum,
                                 Collectors.mapping(Student::getName, Collectors.toList())));
         System.out.println(result);
